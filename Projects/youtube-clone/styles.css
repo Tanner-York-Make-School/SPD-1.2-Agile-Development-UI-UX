@@ -1,0 +1,60 @@
+.nav-btn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.side-nav {
+    width: 240px;
+    height: 100%;
+    top: 61.8px;
+    opacity: .7;
+    overflow: scroll;
+    padding-bottom: 100px;
+}
+
+.side-nav__item-continer {
+    border-top: 1px solid rgb(155, 154, 154);
+    border-bottom: 1px solid rgb(155, 154, 154);
+}
+
+.item-container__title {
+    padding: 8px 24px;
+    margin: 0;
+}
+
+.side-nav__item {
+    height: 40px;
+    width: 240px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.side-nav__item:hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+
+.side-nav__item .icon{
+    height: 44px;
+    width: 44px;
+    margin-right: 24px;
+}
+
+.video-containter {
+    width: 85%;
+    border-bottom: 1px solid #333;
+    margin-top: 30px;
+}
+
+.video-containter-top{
+    width: 85%;
+    border-bottom: 1px solid #333;
+    margin-top: 70px; padding-bottom: 20px;
+}
+
+.video-card {
+    width: 18rem;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}

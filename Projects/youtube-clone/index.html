@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+    <head>
+        <title>TubeYou</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="height: 100%;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top d-flex" style="background-color: white;">
+            <div class="col-3">
+                <div class="row">
+                    <div class="nav-btn mr-sm-3" style="padding: 5px; cursor: pointer;">
+                        <img src="icons/menu-24px.svg">
+                    </div>
+                    <div class="logo d-flex align-items-center" style="width: 129px;">
+                        <img src="yt_logo_rgb_light.png" style="height: 24px; width: 80px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <form class="form-inline mr-sm-1 w-75" >
+                        <input class="form-control form-control-sm w-75" type="search" placeholder="Search" aria-label="Search"
+                            style="font-size: 100%; border-top-right-radius: 0; border-bottom-right-radius: 0">
+                        <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit" 
+                            style="border-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0">
+                            <img src="./icons/search-24px.svg" class="w-100 h-100"/>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="row flex-row justify-content-sm-around w-15" style="opacity: .7;">
+                    <div class="nav-btn">
+                        <img src="icons/video_call-24px.svg">
+                    </div>
+                    <div class="nav-btn">
+                        <img src="icons/apps-24px.svg">
+                    </div>
+                    <div class="nav-btn">
+                        <img src="icons/notifications-24px.svg">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav flex-lg-column position-fixed side-nav">
+            <div class="containter">
+                <div class="d-flex align-items-center side-nav__item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8" class="style-scope yt-icon"></path>
+                        </g></svg>
+                    </div>
+                    <div class="d-flex flex-row w-100 mr-lg-5">Home</div>
+                </div>
+                <div class="d-flex align-items-center side-nav__item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                            <path d="M17.53 11.2c-.23-.3-.5-.56-.76-.82-.65-.6-1.4-1.03-2.03-1.66-1.46-1.46-1.78-3.87-.85-5.72-.9.23-1.75.75-2.45 1.32C8.9 6.4 7.9 10.07 9.1 13.22c.04.1.08.2.08.33 0 .22-.15.42-.35.5-.22.1-.46.04-.64-.12-.06-.05-.1-.1-.15-.17-1.1-1.43-1.28-3.48-.53-5.12C5.87 10 5 12.3 5.12 14.47c.04.5.1 1 .27 1.5.14.6.4 1.2.72 1.73 1.04 1.73 2.87 2.97 4.84 3.22 2.1.27 4.35-.12 5.96-1.6 1.8-1.66 2.45-4.3 1.5-6.6l-.13-.26c-.2-.45-.47-.87-.78-1.25zm-3.1 6.3c-.28.24-.73.5-1.08.6-1.1.38-2.2-.16-2.88-.82 1.2-.28 1.9-1.16 2.1-2.05.17-.8-.14-1.46-.27-2.23-.12-.74-.1-1.37.2-2.06.15.38.35.76.58 1.06.76 1 1.95 1.44 2.2 2.8.04.14.06.28.06.43.03.82-.32 1.72-.92 2.26z" class="style-scope yt-icon"></path>
+                        </g></svg>
+                    </div>
+                    <div class="d-flex flex-row w-100 mr-lg-5">Trending</div>
+                </div>    
+                <div class="d-flex align-items-center side-nav__item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="" style="display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                        <path d="M18.7 8.7H5.3V7h13.4v1.7zm-1.7-5H7v1.6h10V3.7zm3.3 8.3v6.7c0 1-.7 1.6-1.6 1.6H5.3c-1 0-1.6-.7-1.6-1.6V12c0-1 .7-1.7 1.6-1.7h13.4c1 0 1.6.8 1.6 1.7zm-5 3.3l-5-2.7V18l5-2.7z" class="style-scope yt-icon"></path>
+                        </g></svg>
+                    </div>
+                    <div class="d-flex flex-row w-100 mr-lg-5">Subscriptions</div>
+                </div>  
+                <div class="side-nav__item-continer colabsable">
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill-rule="evenodd" class="style-scope yt-icon">
+                                <path d="M12,6.75 L10.2,5 L4.8,5 C3.81,5 3,5.7875 3,6.75 L3,17.25 C3,18.2125 3.81,19 4.8,19 L19.2,19 C20.19,19 21,18.2125 21,17.25 L21,8.5 C21,7.5375 20.19,6.75 19.2,6.75 L12,6.75 Z" class="style-scope yt-icon"></path>
+                                </g></svg>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Library</div>
+                    </div>                        
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                                <path d="M11.9 3.75c-4.55 0-8.23 3.7-8.23 8.25H.92l3.57 3.57.04.13 3.7-3.7H5.5c0-3.54 2.87-6.42 6.42-6.42 3.54 0 6.4 2.88 6.4 6.42s-2.86 6.42-6.4 6.42c-1.78 0-3.38-.73-4.54-1.9l-1.3 1.3c1.5 1.5 3.55 2.43 5.83 2.43 4.58 0 8.28-3.7 8.28-8.25 0-4.56-3.7-8.25-8.26-8.25zM11 8.33v4.6l3.92 2.3.66-1.1-3.2-1.9v-3.9H11z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">History</div>
+                    </div>                        
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                                <path d="M12 3.67c-4.58 0-8.33 3.75-8.33 8.33s3.75 8.33 8.33 8.33 8.33-3.75 8.33-8.33S16.58 3.67 12 3.67zm3.5 11.83l-4.33-2.67v-5h1.25v4.34l3.75 2.25-.67 1.08z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Watch Later</div>
+                    </div>                        
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                                <path d="M3.75 18.75h3v-9h-3v9zm16.5-8.25c0-.83-.68-1.5-1.5-1.5h-4.73l.7-3.43.03-.24c0-.3-.13-.6-.33-.8l-.8-.78L8.7 8.7c-.3.26-.45.64-.45 1.05v7.5c0 .82.67 1.5 1.5 1.5h6.75c.62 0 1.15-.38 1.38-.9l2.27-5.3c.06-.18.1-.36.1-.55v-1.5z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Liked Videos</div>
+                    </div>                        
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                                <path d="M3.67 8.67h14V11h-14V8.67zm0-4.67h14v2.33h-14V4zm0 9.33H13v2.34H3.67v-2.34zm11.66 0v7l5.84-3.5-5.84-3.5z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Playlist</div>
+                    </div>                        
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+                                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" class="style-scope yt-icon"></path>
+                            </g></svg>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Show More</div>
+                    </div>                    
+                </div>
+                <div class="side-nav__item-continer" style="border-top: 0">
+                    <h6 class="item-container__title">Subscriptions</h5>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>       
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                            </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                    <div class="d-flex align-items-center side-nav__item">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <div class="display-img" style="height: 20px; width: 20px; background-color: #333; border-radius: 42px;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-nav__item-continer" style="border-top: 0">
+                <div class="d-flex align-items-center side-nav__item">
+                    <h5 class="item-container__header">Subscriptions</h5>
+                    <div class="icon">
+                        
+                    </div>
+                    <div class="d-flex flex-row w-100 mr-lg-5">Channel Name</div>
+                </div>
+            </div>
+        </nav>
+        <main class="content bg-light d-flex flex-column align-items-center" style="overflow: scroll; margin-left: 240px;">
+            <!-- <header class="ad" style="height: 239; width: 856;">
+                <img class="main-ad-img" src="">
+                <div class="ad-details">
+                    <img class="head-img" src="">
+                    <div class="details">
+                        <img class="company-display-image" src="">
+                        <div class="containter">
+                            <small></small>
+                            <button class="button btn-primary">WATCH NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <div class="containter d-flex justify-content-center flex-lg-column flex-wrap" style="width: 85%; border-bottom: 1px solid #333; margin-top: 70px; padding-bottom: 20px;">
+            <h5 class="title-container d-flex align-items-center">Recomendations</h5>
+            <div class="d-flex flex-row flex-wrap justify-content-start w-80">
+                <div class="card video-card">
+                    <img src="https://i.ytimg.com/vi/FEc1Tvt6Ub4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDqLW_r-dz3aFqzEUSM8LkQUQc8GA" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Video Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                    <div class="card video-card">
+                    <img src="https://i.ytimg.com/vi/pYL8Mi-3-Cs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD30S6qpLZ8KrIvdbniLBIECxVpRQ" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        </div>
+                        <div class="card video-card">
+                    <img src="https://i.ytimg.com/vi/wqH9KX9o0vg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD0yv_8qERumTK-BDGl0Fo3G6f-qw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        </div>
+                    <div class="card video-card">
+                    <img src="https://i.ytimg.com/vi/jBsC34PxzoM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD3UdiyrEOdfPS7qPAQ0Nsc3rGEXQ" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/4RpZ1mwrceg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLANd2_VLU5XBtv6OHRafeCVhHhxlw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/OGINm8Uzf-o/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAXlnig-3_31CjZTCYTsjj99uuEDw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/ICORUlZj68s/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDdRIT4wX1FGOK3fuH76TTImL0GtQ" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/u0sGEsa5KiY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD3ZscFshZVwVJjH7mNLyuXxWoXdw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <button style="width: 200px; background-color: rgba(255, 255, 255, 0);">Show More</button>
+            </div>
+            <div class="containter d-flex justify-content-center flex-lg-column flex-wrap" style="width: 85%; border-bottom: 1px solid #333; margin-top: 30px;">
+            <h5 class="title-container d-flex align-items-center">From Your Subscriptions</h5>
+            <div class="d-flex flex-row flex-wrap justify-content-start w-80">
+                <div class="card" style="width: 18rem; margin-right: 5px; margin-bottom: 20px;">
+                    <img src="https://i.ytimg.com/vi/FEc1Tvt6Ub4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDqLW_r-dz3aFqzEUSM8LkQUQc8GA" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Video Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                    <div class="card video-card">
+                    <img src="https://i.ytimg.com/vi/pYL8Mi-3-Cs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD30S6qpLZ8KrIvdbniLBIECxVpRQ" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        </div>
+                        <div class="card video-card">
+                    <img src="https://i.ytimg.com/vi/wqH9KX9o0vg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD0yv_8qERumTK-BDGl0Fo3G6f-qw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        </div>
+                    <div class="card video-card">
+                    <img src="https://i.ytimg.com/vi/jBsC34PxzoM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD3UdiyrEOdfPS7qPAQ0Nsc3rGEXQ" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/4RpZ1mwrceg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLANd2_VLU5XBtv6OHRafeCVhHhxlw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/OGINm8Uzf-o/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAXlnig-3_31CjZTCYTsjj99uuEDw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/ICORUlZj68s/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDdRIT4wX1FGOK3fuH76TTImL0GtQ" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card video-card">
+                        <img src="https://i.ytimg.com/vi/u0sGEsa5KiY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD3ZscFshZVwVJjH7mNLyuXxWoXdw" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <button style="width: 200px; background-color: rgba(255, 255, 255, 0);">Show More</button>
+            </div>
+        </main>
+    </body>
+</html>
